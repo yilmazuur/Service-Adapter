@@ -6,5 +6,7 @@ In the main application you can consume services as shown below:
 
 integrationDefinition object comes from DB or wherever you want it to come.
 
-var ws = ServiceIntegrator<ServiceClient>.Integrate(integrationDefinition);
+var ws = ServiceIntegrator<ServiceClientFromProxyClass>.Integrate(integrationDefinition);
+
+After you create the "ws" instance, you can set credentials, certificates or consume services methods as ordinarily.
 
